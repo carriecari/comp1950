@@ -27,6 +27,22 @@ h1, h2 {
     border-top: 1px #DC2856 solid;
 }
 
+#thumbnails-wrapper {
+    width:100%;
+    overflow: auto;
+    margin: auto;
+}
+.thumbnails {
+    width:320px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+    text-align: center;
+}
+.thumbnail {
+    width: 320px; 
+}
+
 .members {
     width:30%;
     float: left;
