@@ -58,6 +58,11 @@ h1, h2 {
     box-shadow: 0px 6px 5px #ccc;
 }
 
+#sitemap {
+    width: 100%;
+    max-width: 700px;
+}
+
 /* navigation style */
 
 nav ul {
