@@ -81,16 +81,19 @@ header>dl{
     background: url(../images/input4.gif) left top no-repeat;   
     display: block;  
     height: 24px;  
-    position: relative;  
+    position: relative;
 }  
+
 #keywords4  {  
     width: 156px;  
     position: absolute;  
     top: 3px;  
     left: 12px;  
     border: 1px solid #404040;
-	background-color: #404040;
+    color: white;
+    background-color: #404040;
 }  
+
 #searchBtn4 {  
     position: absolute;  
     top: 3px;  
