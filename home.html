@@ -6,6 +6,11 @@
 	<title>COMP 1950 | Intermerdiate Web Design and Development</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/comp1950.css" media="screen">
+	
+	<!--Calender-->
+    <link rel="stylesheet" type="text/css" href="calendar-master/zabuto_calendar.css">
+	<script src="jquery-3.2.0.min.js"></script>
+    <script src="calendar-master/zabuto_calendar.min.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
@@ -44,6 +49,12 @@
 	<div id="wrapper">	
 		<aside>
 			<!-- Calender -->
+				<div id="my-calendar"></div>
+				<script type="application/javascript">
+					$(document).ready(function () {
+						$("#my-calendar").zabuto_calendar({language: "en"});
+					});
+				</script>
 		</aside>
 	
 	<main>
