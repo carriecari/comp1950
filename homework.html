@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="utf-8">
+	<title>COMP 1950 | HOMEWORK</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/comp1950.css" media="screen">
+	
+	<!--Calender-->
+    <link rel="stylesheet" type="text/css" href="calendar-master/zabuto_calendar.css">
+	<script src="jquery-3.2.0.min.js"></script>
+    <script src="calendar-master/zabuto_calendar.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<![endif]-->
+</head>
+
+<body>
+
+	<header>
+		<a href="http://www.bcit.ca/" target="_blank"><img src="images/bcit_bw.png" id="logo" alt="BCIT"></a>
+		<h1>COMP 1950</h1>
+		<h2>Intermerdiate Web Design and Development</h2>
+		
+		<!-- Search Box -->
+		<dl>
+		<dd><form name="searchform4" id="searchform4" method="get" action="#">
+		<input name="keywords4" id="keywords4" value="" type="text" />
+		<input type="image" src="images/btn4.gif" alt="Search" name="searchBtn4" id="searchBtn4" />
+		</form></dd>
+		</dl>
+	</header>	
+	<nav>
+	<a href="home.html"><img src ="images/icon_home.png" id="icon_home" alt="HOME"></a>
+		<ul>
+			<li><a href="lecture.html">LECTURES</a></li>
+			<li><a href="homework.html">HOMEWORK</a></li>
+			<li><a href="quiz.html">QUIZ</a></li>
+		</ul>
+		<ul id="leftnav">
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">RESOURCES</a></li>
+		</ul>
+	</nav>
+
+
+
+	<div id="wrapper">	
+		<aside>			
+		<!--Side nav-->
+			<ul>
+				<li class="navhead">LECTURES</li>
+				<li class="active"><a href="lecture.html" class="active_a">Homework 1</a>
+				<li><a href="#">Homework 2</a></li>
+				<li><a href="#">Homework 3</a></li>
+				<li><a href="#">Homework 4</a></li>
+				<li><a href="#">Homework 5</a></li>
+				<li><a href="#">Homework 6</a></li>
+				<li><a href="#">Homework 7</a></li>
+				<li><a href="#">Homework 8</a></li>
+				<li><a href="#">Homework 9</a></li>
+				<li><a href="#">Group Project</a></li>
+			</ul>
+			
+		<!-- Calender -->
+				<div id="my-calendar"></div>
+				<script type="application/javascript">
+					$(document).ready(function () {
+						$("#my-calendar").zabuto_calendar({language: "en"});
+					});
+				</script>			
+		</aside>
+	
+	<main id="top">
+	
+		<h1>Homework 1: Publish your COMP1950 homepage</h1>
+		
+		<h2>Instruction</h2>
+		<section style="padding: 20px;">
+			<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{line-height:1.5;padding:15px;border:1px solid #909090;overflow:hidden;word-break:normal;}
+			.tg th{font-weight:normal;padding:15px;border:1px solid #909090;overflow:hidden;word-break:normal;}
+			.tg .tg-s0oj{vertical-align:top}
+			.tg .tg-28r4{vertical-align:top}
+			.tg .tg-sns4{font-weight:bold;background-color:#e2eefa;vertical-align:top;text-align:left;}
+			</style>
+			<table class="tg" style="undefined;table-layout: fixed; width: 90%; margin: auto;">
+			<colgroup>
+			<col style="width: 20%">
+			<col style="width: 40%">
+			<col style="width: 20%">
+			<col style="width: 40%">
+			</colgroup>
+			  <tr>
+				<th class="tg-sns4">Assigned: </th>
+				<th class="tg-28r4">Session 01</th>
+				<th class="tg-sns4">Due:</th>
+				<th class="tg-28r4">Session 02</th>
+			  </tr>
+			  <tr>
+				<td class="tg-sns4">Specifications: </td>
+				<td class="tg-s0oj" colspan="3">Create a homepage to serve as the hub for all your work in COMP1950. As subsequent homework assignments are issued, you will add links to them on this page. Your homepage should state your full name, or nickname if you prefer. Include some biographical information about yourself (such as from your introduction today) and a photo. Also include:
+				<ul style="margin:10px 0px;">
+					<li>A brief overview of your skill level, web development work you have done so far (if any)</li>
+					<li>A list of tools, plug-ins, applications or IDEs that you use for web development,including links to the web pages of these tools.</li>
+					<li>Links to some of your favorite sites, accompanied by brief descriptions explaining why these sites are favorites</li>
+				</ul>
+					Use your understanding of HTML and CSS to the limit of your knowledge, but ensure that it is usable, presentable and coherent. Use CSS, not HTML tables, to define the layout of this page. Include the use of both .class and #id CSS selectors. Do NOT use any Javascripting or server side scripting. Be prepared to share this page with your colleagues in subsequent homework assignments: design and build a page you can be proud of. This page will be used as the entry point for all of your COMP1950 work, edited each week. Don't make your instructor have to search for your homework.</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sns4">Evaluations:</td>
+				<td class="tg-28r4" colspan="3">10 marks for meeting all specifications.</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sns4">Notes:</td>
+				<td class="tg-28r4" colspan="3">This and all subsequent COMP 1950 homework assignments are due the day before thefollowing class unless otherwise noted (eg: if assigned Monday, Jan 1, homework is dueTuesday, Jan 2 11:59pm). Only files located on the COMP 1950 web server will bemarked. All submissions must include:
+				<ul style="margin:10px 0px;">
+				<li>Well formed, valid, semantic HTML. Structural errors are not permitted (eg: misplacing a li tag, or duplicating an id assignment). Non-structural errors are permissible (eg: using a color name not recognized by the validator)</li>
+				<li>Include a referer link on all your COMP1950 pages</li>
+				<li>A code comment with your full name</li>
+				<li>Good file/folder naming conventions</li>
+				<li>Good code practices. (Comment major sections of code, use tabs to indicate tag inheritance)</li>
+				</ul>
+				</td>
+			  </tr>
+			</table>
+		</section>
+		
+		
+		<h2>Rubrics</h2>
+		<section>
+		
+		
+		
+		</section>
+		
+		<h2>Dropbox</h2>
+		<section>
+			<p>Your first homework will be uploaded to your S01 folder.</p>
+			<p>See an example at <a href="http://bcitcomp.ca/students/lynda/demostudent/myindex.html" target="_blank">Lynda's Demostudent Index Page.</a></p>
+			<p>Submit your work by sending a text file (call it S01homework.txt) containing:</p>
+			<ol>
+			<li>the URL to your myindex.html page on the&nbsp;<a href="http://www.bcitcomp.ca/">http://www.bcitcomp.ca/</a>&nbsp;server</li>
+			<li>A paragraph describing your design (e.g. "Two column layout with menu floating left ... ")&nbsp;</li>
+			<li>A statement discussing any validation failures you did not fix up. Why you left them. If you couldn't fix them what you tried to do so, etc.</li>
+			</ol>
+			<p>Upload the text file to the dropbox.</p>
+			<p>Also provide the URL to the homework assignment in the comments for the submission and make the link clickable.</p>
+			<p>A detailed explanation of the homework can be found on the lead instructor's site at:&nbsp;<a href="http://www.bcitcomp.ca/_shared_resources_1950/downloads/comp1950homework01.pdf">http://www.bcitcomp.ca/_shared_resources_1950/downloads/comp1950homework01.pdf</a></p>
+			<p><strong>VARIATIONS FOR THIS SECTION</strong></p>
+			<ol>
+			<li>Submit to the dropbox in learn.bcit.ca as described above</li>
+			<li>You must explain your intended design approach&nbsp;</li>
+			<li>You must explain your decisions about any unresolved validation errors or warning; we will discuss, in class, what's permissible to explain away and what isn't</li>
+			</ol>
+		</section>
+		
+		
+	<footer>
+		<ul>
+			<li><a href="#top">Go back to Top</a></li>
+			<li>&copy; COMP 1950 | Group 8</li>
+		</ul>
+	</footer>
+
+	</main>
+
+</div>
+
+</body>
+</html>
