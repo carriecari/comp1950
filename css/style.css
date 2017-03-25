@@ -63,6 +63,22 @@ h1, h2 {
     max-width: 700px;
 }
 
+/* image styling */
+
+.rationaleimg {
+    float: left;
+    margin-right: 10px;
+}
+
+#headerimg {
+    width: 60%;
+    min-width: 300px;
+}
+
+#dropdownimg {
+    width: 20%;
+    min-width:200px;
+}
 /* navigation style */
 
 nav ul {

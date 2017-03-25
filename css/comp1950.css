@@ -139,10 +139,7 @@ nav li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 8px 16px;
     text-decoration: none;
-	padding-left: 35px;
-	padding-right: 35px;
 }
 
 nav li.dropdown {
