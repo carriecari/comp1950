@@ -272,7 +272,36 @@ section a{
 	margin-bottom: 40px;
 }
 
-		
+/*dropbox input and buttons*/
+.dropbox input, textarea{
+	font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+	color: #03457f;
+    padding: 5px 10px;
+	margin: 5px 10px 10px 10px;
+	border-radius: 3px;
+    box-shadow: 0px 1px #666;
+}
+
+.dropbox input[type="submit"]{
+	background-color: #03457f;
+	color: white;	
+}
+
+.dropbox .cancel{
+	background-color: #ccc;
+	color: white;	
+}
+
+.dropbox textarea{
+	width: 300px;
+	height: 100px;
+	font-weight: normal;
+}
+
+
+	
 /* footer -----------*/
 footer{
 	margin: 20px 0px;
