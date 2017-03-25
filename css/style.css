@@ -66,16 +66,17 @@ h1, h2 {
 /* image styling */
 
 .rationaleimg {
-    float: left;
     margin-right: 10px;
 }
 
 #headerimg {
+    float: right;
     width: 60%;
     min-width: 300px;
 }
 
 #dropdownimg {
+    float: left;
     width: 20%;
     min-width:200px;
 }
