@@ -15,6 +15,33 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
 	<![endif]-->
+<style>
+.answers {
+
+}
+
+label {
+margin-left: 0.5em;
+cursor: pointer;
+} 
+
+input[type="radio"]{
+        margin-left: 1.5em;
+} 
+    
+input[type="submit"]{
+        margin-left: 50%;
+}
+    
+.question {
+
+}
+
+p{
+    padding-left: 0;
+    
+}
+</style>
 </head>
 
 <body>
@@ -35,9 +62,54 @@
 	<nav>
 	<a href="home.html"><img src ="images/icon_home.png" id="icon_home" alt="HOME"></a>
 		<ul>
-			<li><a href="lecture.html">LECTURES</a></li>
-			<li><a href="homework.html">HOMEWORK</a></li>
-			<li><a href="quiz.html">QUIZ</a></li>
+			<li class="dropdown">
+                <a href="lecture.html" class="dropbtn">LECTURES</a>
+                <div class="dropdown-content">
+	            <a href="#">01 | Tools & Standards</a>
+                <a href="#">02 | HTML5</a>
+                <a href="#">03 | CSS Techniques</a>
+	            <a href="#">04 | CSS Layouts</a>
+                <a href="#">05 | Responsive CSS</a>
+                <a href="#">06 | CSS3</a>
+                <a href="#">07 | JavaScript</a>
+                <a href="#">08 | Dynamic Content</a>
+                <a href="#">09 | Templating, SEO</a>
+                <a href="#">10 | Methodology</a>
+                <a href="#">11 | Project Work</a>   
+                </div> 
+            </li>
+            
+			<li class="dropdown">
+                <a href="homework.html"  class="dropbtn">HOMEWORK</a>
+                <div class="dropdown-content">
+	            <a href="#">Homework 01</a>
+                <a href="#">Homework 02</a>
+                <a href="#">Homework 03</a>
+	            <a href="#">Homework 04</a>
+                <a href="#">Homework 05</a>
+                <a href="#">Homework 06</a>
+                <a href="#">Homework 07</a>
+                <a href="#">Homework 08</a>
+                <a href="#">Homework 09</a>
+                <a href="#">Group Project</a> 
+                </div> 
+            </li>
+            
+			<li class="dropdown">
+                <a href="quiz.html" class="dropbtn">QUIZ</a>
+                <div class="dropdown-content">
+	            <a href="#">Quiz01 | Sample Quiz</a>
+                <a href="#">Quiz02 | Basic Tools & Standards</a>
+                <a href="#">Quiz03 | HTML5</a>
+	            <a href="#">Quiz04 | CSS Basics</a>
+                <a href="#">Quiz05 | Responsive Design</a>
+                <a href="#">Quiz06 | CSS3</a>
+                <a href="#">Quiz07 | JavaScript & Dynamic Content</a>
+                <a href="#">Quiz08 | Search Engine Optomization</a>
+                <a href="#">Quiz09 | Final Exam Prep</a>
+                </div> 
+            </li>
+            
 		</ul>
 		<ul id="leftnav">
 			<li><a href="#">ABOUT</a></li>
@@ -52,15 +124,15 @@
 		<!--Side nav-->
 			<ul>
 				<li class="navhead">QUIZ</li>
-				<li class="active"><a href="quiz.html" class="active_a">Quiz 1</a>
-				<li><a href="#">Quiz 2</a></li>
-				<li><a href="#">Quiz 3</a></li>
-				<li><a href="#">Quiz 4</a></li>
-				<li><a href="#">Quiz 5</a></li>
-				<li><a href="#">Quiz 6</a></li>
-				<li><a href="#">Quiz 7</a></li>
-				<li><a href="#">Quiz 8</a></li>
-				<li><a href="#">Quiz 9</a></li>
+				<li class="active"><a href="quiz.html" class="active_a">Quiz01 | Sample Quiz</a>
+				<li><a href="#">Quiz02 | Basic Tools & Standards</a></li>
+				<li><a href="#">Quiz03 | HTML5</a></li>
+				<li><a href="#">Quiz04 | CSS Basics</a></li>
+				<li><a href="#">Quiz05 | Responsive Design</a></li>
+				<li><a href="#">Quiz06 | CSS3</a></li>
+				<li><a href="#">Quiz07 | JavaScript & Dynamic Content</a></li>
+				<li><a href="#">Quiz08 | Search Engine Optomization</a></li>
+				<li><a href="#">Quiz09 | Final Exam Prep</a></li>
 			</ul>
 			
 		<!-- Calender -->
@@ -74,15 +146,83 @@
 	
 	<main id="top">
 	
-		<h1>Quiz 1</h1>
+		<h1>Sample Quiz</h1>
 		
-		<h2>h2 heading here</h2>
+		<h2>Quiz01</h2>
 		<section>
-			<p>input forms here</p>
-			<p>use h3-h5 headings in the section</p>
-			<h3>h3 sample</h3>
-			<h4>h4 sample</h4>
-			<h5>h5 sample</h5>
+             <form>
+            Name:<br>
+        <input type="text" name="firstname"><br><br>
+            Student Number:<br>
+        <input type="text" name="lastname">
+            </form> 
+            <br>
+			<h5>1. Which HTML attribute is used to define inline styles?</h5>
+            <ul class="answers">
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">style</label><br>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">font</label><br>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">class</label><br>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">styles</label><br>
+            </ul> 
+            <br>
+            <h5>2. What is the correct HTML for inserting an image?</h5>
+            <ul class="answers">
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a"> &ltimg src="image.gif" alt="MyImage"&gt </label><br>
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b"> &ltimg alt="MyImage">image.gif&gt </label><br>
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c"> &ltimage src="image.gif" alt="MyImage"&gt </label><br>
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d"> &ltimg href="image.gif" alt="MyImage"&gt </label><br>
+            </ul> 
+            <br>
+            <h5>3. Which hex color code corresponds with the color blue?</h5>
+            <ul class="answers">
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">#000</label><br>
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">#fff</label><br>
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">#f00</label><br>
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">#00f</label><br>
+            </ul> 
+            <br>
+            <h5>4. Which vendor prefix identifies with the Opera browser?</h5>
+            <ul class="answers">
+                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">-ms-</label><br>
+                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">-webkit-</label><br>
+                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">-moz-</label><br>
+                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">-o-</label><br>
+            </ul> 
+            <br>
+            <h5>5. jQuery is?</h5>
+            <ul class="answers">
+                <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A JavaScript Library</label><br>
+                <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Gives access to any DOM element</label><br>
+                <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Designed especially for making JavaScript manipulations easier</label><br>
+                <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">All of the above</label><br>
+            </ul> 
+            <br>
+            <h5>6. Which of the following is an example of SSI code?</h5>
+            <ul class="answers">
+                <input type="radio" name="q6" value="a" id="q6a"><label for="q6a"> /* #echo var="DOCUMENT_NAME"*/</label><br>
+                <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">&lt!--#echo var="DOCUMENT_NAME"--&gt</label><br>
+                <input type="radio" name="q6" value="c" id="q6c"><label for="q6c"> {#echo var="DOCUMENT_NAME"}</label><br>
+                <input type="radio" name="q6" value="d" id="q6d"><label for="q6d"> &ltssi&gt#echo var="DOCUMENT_NAME"&lt/ssi&gt</label><br>
+            </ul> 
+            <br>
+            <h5>7. Server behavior can be customized using a file called .htaccess </h5>
+            <ul class="answers">
+                <input type="radio" name="q7" value="true" id="q7t"><label for="q7t">True</label><br>
+                <input type="radio" name="q7" value="false" id="q7f"><label for="q7f">False</label><br>
+            </ul> 
+            <br>
+            
+            <h3 style="font-size:15px;color:#03457f">8. On the topic of Search Engine Optomization (SEO). Why are keywords not as important as they used to be?</h3>
+            <textarea cols="45" rows="3" name="q8"></textarea>
+            <br>
+            <h3 style="font-size:15px;color:#03457f">9. What do the letters in the acronym <u>WAMP</u> stand for? </h3>
+            <textarea cols="45" rows="3" name="q9"></textarea>
+            <br>
+            <h3 style="font-size:15px;color:#03457f">10. In Javascript, What do the letters in the acronym <u>CDN</u> stand for and what is it used for?</h3>
+            <textarea cols="45" rows="3" name="q10"></textarea>
+            <br>
+                <input type="submit" value="Submit">
+			
 		</section>
 		
 		
