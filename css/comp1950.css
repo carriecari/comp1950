@@ -49,7 +49,7 @@ h2{
 /* header -----------*/
 header{
 	background-color: #404040;
-	opacity: 0.9;
+	opacity: 1;
 	width: 100%;
 	height: 50px;
 	position: fixed;
@@ -104,7 +104,7 @@ header>dl{
 nav{
 	background-color: #03457f;
     background: linear-gradient(to right, #03457f, #03457f,  #e2eefa);
-	opacity: 0.9;
+	opacity: 1;
 	width: 100%;
 	height: 30px;
 	top: 50px;
