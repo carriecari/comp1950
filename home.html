@@ -36,9 +36,54 @@
 	<nav>
 	<a href="home.html"><img src ="images/icon_home.png" id="icon_home" alt="HOME"></a>
 		<ul>
-			<li><a href="lecture.html">LECTURES</a></li>
-			<li><a href="homework.html">HOMEWORK</a></li>
-			<li><a href="quiz.html">QUIZ</a></li>
+			<li class="dropdown">
+                <a href="lecture.html" class="dropbtn">LECTURES</a>
+                <div class="dropdown-content">
+	            <a href="#">01 | Tools & Standards</a>
+                <a href="#">02 | HTML5</a>
+                <a href="#">03 | CSS Techniques</a>
+	            <a href="#">04 | CSS Layouts</a>
+                <a href="#">05 | Responsive CSS</a>
+                <a href="#">06 | CSS3</a>
+                <a href="#">07 | JavaScript</a>
+                <a href="#">08 | Dynamic Content</a>
+                <a href="#">09 | Templating, SEO</a>
+                <a href="#">10 | Methodology</a>
+                <a href="#">11 | Project Work</a>   
+                </div> 
+            </li>
+            
+			<li class="dropdown">
+                <a href="homework.html"  class="dropbtn">HOMEWORK</a>
+                <div class="dropdown-content">
+	            <a href="#">Homework 01</a>
+                <a href="#">Homework 02</a>
+                <a href="#">Homework 03</a>
+	            <a href="#">Homework 04</a>
+                <a href="#">Homework 05</a>
+                <a href="#">Homework 06</a>
+                <a href="#">Homework 07</a>
+                <a href="#">Homework 08</a>
+                <a href="#">Homework 09</a>
+                <a href="#">Group Project</a> 
+                </div> 
+            </li>
+            
+			<li class="dropdown">
+                <a href="quiz.html" class="dropbtn">QUIZZES</a>
+                <div class="dropdown-content">
+	            <a href="#">Quiz 01 | Sample Quiz</a>
+                <a href="#">Quiz 02 | Basic Tools & Standards</a>
+                <a href="#">Quiz 03 | HTML5</a>
+	            <a href="#">Quiz 04 | CSS Basics</a>
+                <a href="#">Quiz 05 | Responsive Design</a>
+                <a href="#">Quiz 06 | CSS3</a>
+                <a href="#">Quiz 07 | JavaScript & Dynamic Content</a>
+                <a href="#">Quiz 08 | Search Engine Optomization</a>
+                <a href="#">Quiz 09 | Final Exam Prep</a>
+                </div> 
+            </li>
+            
 		</ul>
 		<ul id="leftnav">
 			<li><a href="#">ABOUT</a></li>
@@ -47,17 +92,33 @@
 	</nav>
 
 
+
 	<div id="wrapper">	
-		<aside>
-			<!-- Calender -->
+		<aside>			
+		<!--Side nav-->
+			<ul>
+				<li class="navhead">LECTURES</li>
+				<li class="active"><a href="lecture.html" class="active_a">01 | Tools &amp; Standards</a>
+				<li><a href="#">02 | HTML5</a></li>
+				<li><a href="#">03 | CSS Techniques</a></li>
+				<li><a href="#">04 | CSS Layouts</a></li>
+				<li><a href="#">05 | Responsive CSS</a></li>
+				<li><a href="#">06 | CSS3</a></li>
+				<li><a href="#">07 | JavaScript</a></li>
+				<li><a href="#">08 | Dynamic Content</a></li>
+				<li><a href="#">09 | Templating, SEO</a></li>
+				<li><a href="#">10 | Methodology</a></li>
+				<li><a href="#">11 | Project Work</a></li>
+			</ul>
+			
+		<!-- Calender -->
 				<div id="my-calendar"></div>
 				<script type="application/javascript">
 					$(document).ready(function () {
 						$("#my-calendar").zabuto_calendar({language: "en"});
 					});
-				</script>
+				</script>			
 		</aside>
-	
 	<main id="top">
 		<h1>Welcome to COMP 1950!</h1>
 		
