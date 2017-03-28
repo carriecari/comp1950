@@ -372,3 +372,9 @@ textarea{
 label{
     color:black;
 }
+
+/* Projector View */
+
+.remove {
+    display: none;
+}
